@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/timesheets_db
+    username: root
+    password: Nadzhmeddin1
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySQL5Dialect

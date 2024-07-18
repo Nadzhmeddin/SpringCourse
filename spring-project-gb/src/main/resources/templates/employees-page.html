@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+</head>
+<body>
+<h1>Сотрудники организации</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Идентификатор сотрудника</th>
+        <th>Имя сотрудника</th>
+        <th>Фамилия сотрудника</th>
+        <th>Возраст сотрудника</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employee: ${employees}">
+        <td> <span th:text="${employee.id}"></span></td>
+        <td> <span th:text="${employee.firstName}"></span></td>
+        <td> <span th:text="${employee.lastName}"></span></td>
+        <td> <span th:text="${employee.age}"></span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

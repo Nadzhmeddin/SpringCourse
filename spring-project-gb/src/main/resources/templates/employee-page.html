@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home / Employee</title>
+</head>
+<body>
+<h1>Домашняя страница сотрудника #<span th:text="${employee.getId()}"></span></h1>
+Имя сотрудника: <span th:text="${employee.firstName}"></span> <br>
+Фамилия сотрудника: <span th:text="${employee.lastName}"></span> <br>
+Возраст сотрудника: <span th:text="${employee.age}"></span> <br>
+</body>
+</html>

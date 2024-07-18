@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home/Timesheet</title>
+</head>
+<body>
+    <h1>Запись рабочего времени #<span th:text="${timesheet.getId}"></span></h1>
+    Название проекта: <span th:text="${timesheet.projectId}"></span> <br>
+    Сотрудник: <span th:text="${timesheet.employeeId}"></span><br>
+    Минут потрачено: <span th:text="${timesheet.getMinutes}"></span> <br>
+    Запись создана: <span th:text="${timesheet.getCreatedAt}"></span> <br>
+</body>
+</html>
