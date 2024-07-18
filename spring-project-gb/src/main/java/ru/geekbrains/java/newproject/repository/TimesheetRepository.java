@@ -8,7 +8,6 @@ import ru.geekbrains.java.newproject.model.Timesheet;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public interface TimesheetRepository extends JpaRepository<Timesheet, Long> {
