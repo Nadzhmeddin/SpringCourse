@@ -2,6 +2,7 @@ package ru.geekbrains.java.newproject.page;
 
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,7 @@ import java.util.Optional;
 @Controller
 @RequestMapping("/home/timesheets")
 @RequiredArgsConstructor
+@Secured({"admin", "user"})
 public class TimesheetPageController {
 
     private final TimesheetPageService service;
