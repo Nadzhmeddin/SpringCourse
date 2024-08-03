@@ -19,8 +19,8 @@ public class SecurityConfiguration {
                 .formLogin(Customizer.withDefaults())
                 .authorizeHttpRequests(requests -> requests
                         .requestMatchers("/home/projects/**").hasAuthority(RoleName.ADMIN.getName())
-                        .requestMatchers("/home/timesheets/**").hasAuthority(RoleName.USER.getName())
-                        .requestMatchers("/projects", "/employees", "/timesheets").hasAuthority(RoleName.REST.getName())
+//                        .requestMatchers("/home/timesheets/**").hasAuthority(RoleName.USER.getName())
+//                        .requestMatchers("/projects", "/employees", "/timesheets").hasAuthority(RoleName.REST.getName())
                         .anyRequest().authenticated()
                 )
                 .build();

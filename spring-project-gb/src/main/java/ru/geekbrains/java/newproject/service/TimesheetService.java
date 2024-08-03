@@ -1,6 +1,7 @@
 package ru.geekbrains.java.newproject.service;
 
 import org.springframework.stereotype.Service;
+import ru.geekbrains.java.newproject.aspect.Timer;
 import ru.geekbrains.java.newproject.model.Project;
 import ru.geekbrains.java.newproject.model.Timesheet;
 import ru.geekbrains.java.newproject.repository.ProjectRepository;
@@ -13,6 +14,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service // то же самое, что и Component
+//@Timer
 public class TimesheetService {
 
     private final TimesheetRepository timesheetRepository;
@@ -24,11 +26,14 @@ public class TimesheetService {
     }
 
     // получить одной записи
+//    @Timer
     public Optional<Timesheet> getById(Long id) {
+        System.out.println("LOG INSIDE METHOD");
         return timesheetRepository.findById(id);
     }
 
     // получить все записи
+//    @Timer(enabled=false)
     public List<Timesheet> getAll() {
         return timesheetRepository.findAll();
     }
