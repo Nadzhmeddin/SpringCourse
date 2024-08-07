@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/new-project/new-project.iml" filepath="$PROJECT_DIR$/new-project/new-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/project-spring-geekbrains.iml" filepath="$PROJECT_DIR$/.idea/project-spring-geekbrains.iml" />
     </modules>
   </component>
