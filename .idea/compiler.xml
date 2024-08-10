@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="timesheet-rest" />
         <module name="timesheet-page" />
+        <module name="logging-starter" />
+        <module name="timesheet-rest" />
         <module name="eureka-server" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="logging-starter" options="-parameters" />
       <module name="new-project" options="" />
       <module name="timesheet-page" options="-parameters" />
       <module name="timesheet-rest" options="-parameters" />

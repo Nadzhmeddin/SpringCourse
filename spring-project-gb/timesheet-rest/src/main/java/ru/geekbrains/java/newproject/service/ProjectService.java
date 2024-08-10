@@ -1,10 +1,12 @@
 package ru.geekbrains.java.newproject.service;
 
 import org.springframework.stereotype.Service;
+import ru.geekbrains.aspect.Logging;
 import ru.geekbrains.java.newproject.model.Project;
 import ru.geekbrains.java.newproject.model.Timesheet;
 import ru.geekbrains.java.newproject.repository.ProjectRepository;
 import ru.geekbrains.java.newproject.repository.TimesheetRepository;
+import ru.geekbrains.pringArgs.PrintArgs;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,10 +23,13 @@ public class ProjectService {
         this.timesheetRepository = timesheetRepository;
     }
 
+
+    @Logging
     public List<Project> getAllProjects() {
         return projectRepository.findAll();
     }
 
+    @PrintArgs
     public Optional<Project> getProjectById(Long id) {
         return projectRepository.findById(id);
     }

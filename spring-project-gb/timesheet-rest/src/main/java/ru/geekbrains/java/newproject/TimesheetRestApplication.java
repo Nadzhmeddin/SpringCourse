@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Import;
+import ru.geekbrains.aspect.LoggingAutoConfiguration;
 import ru.geekbrains.java.newproject.model.*;
 import ru.geekbrains.java.newproject.repository.*;
 

@@ -1,3 +1,8 @@
+application:
+  logging:
+    level: WARN
+  print-args:
+    print-args: true
 server:
   port: 8081
 spring:
